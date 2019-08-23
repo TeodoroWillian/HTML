@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+
+<!-- A <div> element with a context menu -->
+
+<div contextmenu="popup-menu">
+</div>
+<style>
+Right-click to see the adjusted context menu
+	div {
+	width: 300px;
+	height: 80px;
+	background-color: lightgreen;
+	}
+</style>
+<body>
+<menu type="context" id="popup-menu">
+	<menuitem type="checkbox" onclick="toggleOption()"
+		checked="true">Checkbox</menuitem>
+	<menuitem type="command" label="Command" icon="ícon.png"
+		onclick="doSomething()">Checkbox</menuitem>
+	<menuitem type="radio" name="groupe1" onclick="option()"
+		checked="true">Radio button 1</menuitem>
+	<menuitem type="radio" name="group1"
+		onclick="option()">Radio button 2</menuitem>
+		</menu>
+</body>		
+</html>		
